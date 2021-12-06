@@ -4,6 +4,9 @@
 }
 -->
 
+This is a custom fork for [buftabline.nvim](https://github.com/jose-elias-alvarez/buftabline.nvim) and [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) to use ctermfg as icon colors.
+
+---
 # buftabline.nvim
 
 A low-config, minimalistic buffer tabline Neovim plugin written in Lua,

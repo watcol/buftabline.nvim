@@ -6,12 +6,11 @@ local icon_hls = {}
 
 -- thanks to barbar.nvim for this implementation
 local get_hl_attribute = function(hl, attribute)
-    local rgb_val = api.nvim_get_hl_by_name(hl, true)[attribute]
-    return rgb_val and string.format("#%06x", rgb_val) or "NONE"
+    return api.nvim_get_hl_by_name(hl, false)[attribute] or "NONE"
 end
 
 local define_hl = function(name, fg, bg)
-    vim.cmd(string.format("hi! %s guifg=%s guibg=%s", name, fg, bg))
+    vim.cmd(string.format("hi! %s ctermfg=%s ctermbg=%s", name, fg, bg))
     icon_hls[name] = true
 end
 
