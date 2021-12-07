@@ -786,7 +786,7 @@ local icons = {
   };
   ["rs"] = {
     icon = "",
-    color = colors.nornal,
+    color = colors.normal,
     name = "Rust"
   };
   ["rss"] = {
