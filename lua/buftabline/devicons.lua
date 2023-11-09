@@ -65,27 +65,27 @@ local icons = {
     name = "Dropbox",
   },
   ["xls"] = {
-    icon = "",
+    icon = "󰈛",
     color = colors.green,
     name = "Xls",
   },
   ["doc"] = {
-    icon = "",
+    icon = "󰈬",
     color = colors.blue,
     name = "Doc",
   },
   ["ppt"] = {
-    icon = "",
+    icon = "󰈧",
     color = colors.red,
     name = "Ppt",
   },
   ["xml"] = {
-    icon = "謹",
+    icon = "󰗀",
     color = colors.orange,
     name = "Xml",
   },
   ["webpack"] = {
-    icon = "ﰩ",
+    icon = "󰜫",
     color = colors.lightgreen,
     name = "Webpack",
   },
@@ -95,7 +95,7 @@ local icons = {
     name = "SettingsJson",
   },
   ["cs"] = {
-    icon = "",
+    icon = "󰌛",
     color = colors.green,
     name = "Cs",
   },
@@ -105,7 +105,7 @@ local icons = {
     name = "Procfile"
   },
   ["svg"] = {
-    icon = "ﰟ",
+    icon = "󰜡",
     color = colors.yellow,
     name = "Svg",
   },
@@ -120,7 +120,7 @@ local icons = {
     name = "Bashrc"
   };
   [".babelrc"] = {
-    icon = "ﬥ",
+    icon = "",
     color = colors.yellow,
     name = "Babelrc"
   };
@@ -735,12 +735,12 @@ local icons = {
     name = "Pyo"
   };
   ["r"] = {
-    icon = "ﳒ",
+    icon = "󰟔",
     color = colors.blue,
     name = "R"
   };
   ["R"] = {
-    icon = "ﳒ",
+    icon = "󰟔",
     color = colors.blue,
     name = "R"
   };
@@ -780,7 +780,7 @@ local icons = {
     name = "Rmd"
   };
   ["rproj"] = {
-    icon = "鉶",
+    icon = "󰗆",
     color = colors.blue,
     name = "Rproj"
   };
@@ -860,12 +860,12 @@ local icons = {
     name = "Tor"
   };
   ["txt"] = {
-    icon = "",
+    icon = "󰈙",
     color = colors.normal,
     name = "Txt"
   };
   ["tex"] = {
-    icon = "",
+    icon = "󰙩",
     color = colors.teal,
     name = "Tex"
   };
@@ -895,7 +895,7 @@ local icons = {
     name = "Vim"
   };
   ["vue"] = {
-    icon = "﵂",
+    icon = "",
     color = colors.green,
     name = "Vue"
   };
@@ -940,7 +940,7 @@ local icons = {
     name = "Terminal"
   };
   ["pdf"] = {
-    icon = "",
+    icon = "",
     color = colors.darkred,
     name = "Pdf"
   };
@@ -955,7 +955,7 @@ local icons = {
     name = "GDScript"
   };
   ["tscn"] = {
-    icon = "",
+    icon = "󰎁",
     color = colors.cyan,
     name = "TextScene"
   };
@@ -980,7 +980,7 @@ local icons = {
     name = "ImportConfiguration"
   };
   ["material"] = {
-    icon = "",
+    icon = "󰔉",
     color = colors.purple,
     name = "Material"
   };
@@ -1005,7 +1005,7 @@ local icons = {
     name = "DesktopEntry"
   };
   ["opus"] = {
-    icon = "",
+    icon = "󰈣",
     color = colors.normal,
     name = "OPUS"
   };
@@ -1025,14 +1025,14 @@ local icons = {
     name = 'Zig',
   };
   ['mint'] = {
-    icon = "",
+    icon = "󰌪",
     color = colors.lightgreen,
     name = "Mint",
   };
 }
 
 local default_icon = {
-  icon = "",
+  icon = "󰈙",
   color = colors.normal,
   name = "Default",
 }
@@ -1049,7 +1049,7 @@ end
 local function set_up_highlight(icon_data)
   local hl_group = get_highlight_name(icon_data)
   if hl_group then
-    vim.api.nvim_command("highlight! "..hl_group.. " ctermfg="..icon_data.color)
+    vim.api.nvim_command("highlight! " .. hl_group .. " ctermfg=" .. icon_data.color)
   end
 end
 
